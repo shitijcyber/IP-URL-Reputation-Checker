@@ -1,6 +1,6 @@
 import requests
 import os
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, render_template
 import base64
 from flask_cors import CORS
 import ipaddress
