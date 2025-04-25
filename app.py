@@ -1,4 +1,5 @@
 import requests
+import os
 from flask import Flask, jsonify, request
 import base64
 from flask_cors import CORS
