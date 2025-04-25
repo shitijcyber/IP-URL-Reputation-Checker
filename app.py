@@ -11,9 +11,10 @@ CORS(app)
 API_KEY = '5b5037342f458f4e86df8bbd68033787b68a133844c01ab7b89fd6ea8a92daf9'
 HEADERS = {'x-apikey': API_KEY}
 
-@app.route('/check', methods=['GET'])
+@app.route('/')
 def index():
     return render_template('index.html')
+@app.route('/check', methods=['GET'])
 def check():
     try:
         query = request.args.get('query')
